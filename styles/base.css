@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Merienda:wght@300..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Permanent+Marker&display=swap');
 
-body {
-    font-family: 'Crimson', sans-serif;
-}
 /* Header Styles */
 header {  
     width: 100%;
@@ -10,18 +7,18 @@ header {
     align-items: center;
     justify-content: space-evenly;
     /* margin: 0 auto; */
-    font-family: 'Crimson';
+    font-family: 'permanent marker';
     font-size: 1rem;
-    background-color: #ACC835;
+    background-color: #4bddbd;
     color: #070707;
     padding: 1rem;
 }
 
-header img {
+/* header img {
     max-width: 100px;
     height: auto;
     border-radius: 50%;
-}
+} */
 /* Navagation Styles */
 nav {
     display: inline-block;
@@ -65,7 +62,7 @@ main h2 {
 .card {
     display: grid;
     /* grid-template-rows: 1fr 1fr; */
-    background-color: #ACC835;
+    background-color: #4bddbd;
     padding: 20px;
     /* margin-bottom: 20px; */
 }
@@ -107,7 +104,7 @@ footer {
     /* display: grid; */
     /* margin: 0 auto; */
     display: inline-block;
-    background-color: #ACC835;
+    background-color: #4bddbd;
     color: #070707;
     text-align: center;
     font-size: 1.5rem;
