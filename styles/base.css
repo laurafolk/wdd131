@@ -100,12 +100,11 @@ h2 {
     display: block;
     /* text-decoration: underline; */
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 /* Card Styles */
 .card {
-    display: grid;
-    grid-template-rows: 80px auto;
+    flex: 1 1;
     background-color: white;
     border-radius: 30px;
     border: #070707 1px solid;
@@ -117,7 +116,9 @@ h2 {
 #aside-section {
     grid-column: 3 / 4;
 }
+
 .card h2 {
+    display: grid;
     text-align: center;
     background-color: #4bddbd;
     padding: 1rem;
@@ -135,6 +136,7 @@ h2 {
     max-width: 35%;
     height: auto;
   }
+
   p {
     display: block;
   }
