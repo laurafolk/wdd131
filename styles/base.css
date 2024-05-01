@@ -11,7 +11,9 @@ header {
     display: grid;
     grid-template-rows: auto 50px;
     font-family: 'permanent marker';
-    background-color: #4bddbd;
+    /* background-color: #9CD08F; */
+    background-color: #9A98B5;
+    /* background-color: #4bddbd; */
     color: #070707;
 }
 
