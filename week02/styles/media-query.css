@@ -4,8 +4,8 @@ body {
 
 header, main, footer {
     max-width: 640px;
-    margin: 1rem auto;
-    border: .25rem solid #bbb;
+    margin: 2rem auto;
+    border: 1px solid black;
     padding: 1rem;
     background-color: lightskyblue;
 }
