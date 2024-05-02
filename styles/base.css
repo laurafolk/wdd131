@@ -121,7 +121,7 @@ h2 {
 
 #aside-section {
     display: grid;
-    grid-template-columns: 3 / 4;
+    /* grid-template-columns: 2 / 4; */
 }
 
 .card h2 {
