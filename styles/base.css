@@ -24,6 +24,8 @@ header {
     font-family: "permanent marker", sans-serif;
     font-weight: 500;
     font-size: large;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .nav-bar ul {
@@ -66,8 +68,9 @@ main {
     margin-top: 1rem;
     margin-bottom: 1rem;
     background-color: white;
-    /* padding: 20px; */
-    display: block;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
     unicode-bidi: isolate;
     /* gap: 20px; */
 }
@@ -81,7 +84,7 @@ section {
     unicode-bidi: isolate;
 }
 
-#profile-text {
+div .profile-text {
     grid-column: 2 /3;
     text-align: left;
 }
@@ -103,6 +106,7 @@ h2 {
     /* text-decoration: underline; */
     text-align: center;
     font-size: 2rem;
+    margin: 0;
 }
 /* Card Styles */
 .card {
@@ -116,7 +120,8 @@ h2 {
 }
 
 #aside-section {
-    grid-column: 3 / 4;
+    display: grid;
+    grid-template-columns: 3 / 4;
 }
 
 .card h2 {
