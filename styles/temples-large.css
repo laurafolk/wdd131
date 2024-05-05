@@ -1,0 +1,27 @@
+@media screen and (min-width: 690px) {
+    body {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navagation {
+        flex-direction: row;
+    }
+
+    main {
+        margin: 1rem auto;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
