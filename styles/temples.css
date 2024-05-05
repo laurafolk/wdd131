@@ -42,6 +42,14 @@ nav {
     flex-direction: column;
 }
 
+nav a:hover {
+	text-decoration: underline double;
+}
+
+.active {
+	color: yellow;
+}
+
 main {
     display: block;
 }
