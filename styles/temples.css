@@ -9,24 +9,37 @@ body {
 }
 
 header {
+    display: grid;
+    grid-gap: 1rem;
     background-color: darkmagenta;
     padding: 10px;
-    unicode-bidi: isolate;
 }
 
 #menu {
-    font-size: 1.5rem;
-    border: 0;
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
     color: black;   
 }
 
-.navagation {
-    display: flex;
+button {
+    appearance: auto;
+}
+
+nav {
     text-decoration-color: black;
 }
 
 nav {
     display: flex;
+    background-color: darkmagenta;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    flex-direction: column;
 }
 
 main {

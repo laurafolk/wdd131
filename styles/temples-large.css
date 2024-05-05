@@ -12,9 +12,13 @@
         display: none;
     }
 
-    .navagation {
-        flex-direction: row;
-    }
+	nav {
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+	nav a {
+		flex: 1 1 100%;
+	}
 
     main {
         margin: 1rem auto;
