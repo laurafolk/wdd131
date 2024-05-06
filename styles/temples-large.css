@@ -1,11 +1,17 @@
-@media screen and (min-width: 690px) {
+@media screen and (min-width: 640px) {
     body {
         font-family: 'Times New Roman', Times, serif;
     }
 
     header {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-gap: 1rem;
+        padding: 15px;
+        background-color: blueviolet;
+    }
+
+    h1 {
+        display: block;
     }
 
     #menu {
@@ -13,8 +19,11 @@
     }
 
 	nav {
-		justify-content: flex-end;
+        display: flex;
+        grid-column: 2 / 3;
+		justify-content: space-around;
 		flex-direction: row;
+        align-items: center;
 	}
 	nav a {
 		flex: 1 1 100%;
@@ -27,5 +36,11 @@
     h2 {
         font-size: 1.2rem;
         text-align: center;
+    }
+
+    .image-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 20px;
     }
 }

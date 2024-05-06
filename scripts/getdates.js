@@ -5,12 +5,10 @@ var currentYear = new Date().getFullYear();
 document.getElementById("currentYear").textContent = currentYear;
 
 // Get the last modified date of the document
-var lastModified = new Date(document.lastModified);
-
-console.log("Last modified date: " + lastModified);
+// var lastModified = new Date(document.lastModified);
 
 // Set the last modified date in the HTML
-// function getLastModified() {
-//     return new Date(document.lastModified);
-// }
-// var lastModified = getLastModified();
+function getLastModified() {
+    return new Date(document.lastModified);
+}
+var lastModified = getLastModified();
