@@ -149,6 +149,7 @@ hr {
 .card li {
     padding: 1rem;
     text-align: justify;
+    text-decoration-color: #070707;
 }
 
 .aside-section {
