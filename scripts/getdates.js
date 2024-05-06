@@ -8,5 +8,4 @@ document.getElementById("currentYear").textContent = currentYear;
 var lastModified = new Date(document.lastModified);
 
 // Set the last modified date in the HTML
-
-// var lastModified = getLastModified();
+document.getElementById("lastmodified").innerHTML = lastModified

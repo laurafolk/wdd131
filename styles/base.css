@@ -8,7 +8,7 @@ header {
     display: grid;
     grid-template-rows: auto 50px;
     font-family: 'permanent marker';
-    background-color: #9A98B5;
+    background-color: #8ac926;
     color: #070707;
 }
 
@@ -39,7 +39,7 @@ nav a {
     /* display: flex; */
     list-style-type: none;
     justify-content: space-around;
-    color: #fff;
+    color: white;
     text-decoration: none;
     text-align: center;
     padding: 1rem;
@@ -55,12 +55,19 @@ main {
     background-color: white;
     padding: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 2fr 1fr ;
     unicode-bidi: isolate;
 }
 
-#main-section {
+.main-section {
+    padding: 20px;
+    text-align: left;
+    /* display: grid; */
+    /* grid-template-columns: 1 / 4; */
     grid-column: 1 /2;
+}
+
+.main-section p {
     text-align: left;
 }
 
@@ -69,22 +76,39 @@ section {
     unicode-bidi: isolate;
 }
 
-div .profile-text {
-    grid-column: 2 /3;
-    text-align: left;
+.about-me {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* grid-column: 2 /3;
+    text-align: left; */
+}
+
+.about-me p {
+    padding: 20px;
+}
+
+.place {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.city {
+    padding-left: 20px;
 }
 
 @media (max-width: 900px) {
-    #main-section {
-        margin-bottom: 1rem;
+    main {
+        display: grid;
+        grid-template-columns: 80% 2%;
     }
 }
 
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    /* display: block;
+    margin-left: auto; */
     border-radius: 15px;
+    /* overflow-clip-margin: content-box;
+    overflow: clip; */
 }
 
 h1 {
@@ -101,6 +125,18 @@ h2 {
     /* font-size: 2rem; */
     /* margin: 0; */
 }
+
+h3 {
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    color: #070707;
+}
+
+hr {
+    width: 70%;
+    margin: 0 auto;
+}
 /* Card Styles show correct as of 6:02 on 05-04-24 */
 .card {
     flex: 1 1;
@@ -114,15 +150,19 @@ h2 {
     padding: 1rem;
     text-align: justify;
 }
-#aside-section {
-    display: grid;
-    grid-template-columns: auto;
+
+.aside-section {
+    padding: 20px;
+    border: 2px #070707;
+    border-radius: 30px;
+    /* display: grid;
+    grid-template-columns: auto; */
 }
 
 .card h2 {
     display: grid;
     text-align: center;
-    background-color: #9A98B5;
+    background-color: #8ac926;
     padding: 1rem;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
@@ -134,21 +174,24 @@ h2 {
 }
 
 /* Image Styles */
-.responsive {
-    max-width: 35%;
-    height: auto;
+.card img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 20px;
+    margin: 15px;
   }
 
-  p {
+  /* p {
     padding: 0.5rem;
     margin: 0;
-  }
+  } */
 
 /* Footer Styles shows correct at of 05-04-24*/
 footer {
     grid-column: 1 / 7;
+    grid-row: auto;
     padding: 1rem;
-    background-color: #9A98B5;
+    background-color: #8ac926;
     color: #070707;
     text-align: center;
     font-size: 2rem;
