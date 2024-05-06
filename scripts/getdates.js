@@ -9,4 +9,4 @@ var lastModified = new Date(document.lastModified);
 
 // Set the last modified date in the HTML
 
-var lastModified = getLastModified();
+// var lastModified = getLastModified();
