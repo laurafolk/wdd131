@@ -39,7 +39,7 @@ nav a {
     /* display: flex; */
     list-style-type: none;
     justify-content: space-around;
-    color: white;
+    color: #FCFCFC;
     text-decoration: none;
     text-align: center;
     padding: 1rem;
@@ -52,7 +52,7 @@ nav a:hover {
 main {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    background-color: white;
+    background-color: #FCFCFC;
     padding: 20px;
     display: grid;
     grid-template-columns: 2fr 1fr ;
@@ -140,7 +140,7 @@ hr {
 /* Card Styles show correct as of 6:02 on 05-04-24 */
 .card {
     flex: 1 1;
-    background-color: white;
+    background-color: #FCFCFC;
     border-radius: 30px;
     border: #070707 1px solid;
     margin: 1rem;
