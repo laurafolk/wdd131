@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    /* padding: 0; */
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -13,7 +13,7 @@ header {
     grid-gap: 1rem;
     background-color: blueviolet;
     color: black;
-    padding: 10px;
+    padding: 20px;
 }
 
 header h1 {
