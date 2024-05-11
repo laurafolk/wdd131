@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poetsen+One&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "PT Sans", sans-serif;
+    margin: auto;
+    height: 100%;
+}
+
+header {
+    background-color: #593C8F;
+    color: #FFF9FB;
+    text-align: center;
+    padding-top: 1px;
+    /* color: #95C623; */
+    /* text-decoration-color: #FFF9FB; */
+}
+
+header h1 {
+    padding: 20px;
+}
+
+.spacer {
+    height: 20px;
+    background-color: lightgrey;
+}
+
+.hero {
+    margin-top: -1px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #593C8F;
+    color: #FFF9FB;
+    text-align: center;
+    padding-top: 1px;
+}
