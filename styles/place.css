@@ -47,6 +47,12 @@ h2 {
 
 .data, .weather {
     display: grid;
+    padding: 20px;
+}
+
+.data-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .small-spacer {
@@ -67,10 +73,25 @@ footer {
 
     .data {
         position: absolute;
-        top: 160px;
-        left: 20px;
-        width: 325px;
-        background-color: var(--transl-white);
+        top: 25%;
+        left: 4%;
+        background-color: transparent;
+        display: block;
+        padding-right: 40px;
+    }
+
+    .data h2 {
+        background-color: whitesmoke;
+        color: #070707;
+        text-align: left;
+        padding: 15px;
+        padding-left: 20px;
+        margin-left: -30px;
+        margin-top: -15px;
+    }
+
+    .data-item {
+        margin: -25px;
     }
 
     .weather {
@@ -78,10 +99,6 @@ footer {
         right: 20px;
         bottom: 115px;
         width: 325px;
-        background-color: var(--transl-white);
-    }
-
-    h2 {
-        background-color: var(--transl-white); 
+        background-color: var(white);
     }
 }
