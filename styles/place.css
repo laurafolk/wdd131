@@ -21,6 +21,12 @@ header h1 {
     padding: 20px;
 }
 
+header::after {
+    content: "";
+    display: block;
+    background-color: #593C8F;
+}
+
 .spacer {
     height: 20px;
     background-color: greenyellow;
@@ -59,6 +65,13 @@ h2 {
     height: 20px;
     background-color: greenyellow;
 }
+
+.main-img::after {
+    content: "";
+    display: block;
+    background-color: #593C8F;
+}
+
 footer {
     background-color: #593C8F;
     color: #FFF9FB;
