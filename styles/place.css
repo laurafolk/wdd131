@@ -84,7 +84,8 @@ footer {
     background-color: #593C8F;
     color: #FFF9FB;
     text-align: center;
-    padding-top: 1px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 @media screen and (min-width: 750px) {
