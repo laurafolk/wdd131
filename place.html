@@ -6,8 +6,7 @@
     <title>WDD 131 - Place Page</title>
     <meta name="description" content="WDD 131 - Week03 Country / Place Page">
     <meta name="author" content="Laura M. Folk">
-    <link rel="stylesheet" href="styles/place.css">
-    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="stylesheet" type="text/css" href="styles/place.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poetsen+One&display=swap" rel="stylesheet">
@@ -20,10 +19,40 @@
         <div class="spacer"></div>
     </header>
     <main>
-        <div class="hero">
+        <div class="main-img">
             <picture>
-                <source srcset="images/gateway-arch-at-dawn.webp" media="(max-width:750px)">
+                <source srcset="images/gateway-arch-large.webp" media="(min-width:900px)">
+                <source srcset="images/gateway-arch-medium.webp" media="(min-width:600px)">
+                <img src="images/st-louis-temple-small.webp" alt="St Louis Temple" width="500">
             </picture>
+        <div class="small-spacer"></div>   
+        </div>
+        <div class="data">
+            <h2>Data</h2>
+            <table id="data-table">
+                <tbody>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="weather">
+            <h2>Weather</h2>
+            <table id="weather-table">
+                <tbody>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                </tbody>
+            </table>
         </div>
     </main>
     <footer>

@@ -23,11 +23,14 @@ header h1 {
 
 .spacer {
     height: 20px;
-    background-color: lightgrey;
+    background-color: greenyellow;
 }
 
-.hero {
-    margin-top: -1px;
+.main-img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 body {
@@ -35,9 +38,50 @@ body {
     flex-direction: column;
 }
 
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: 2em;
+    text-align: center;
+}
+
+.data, .weather {
+    display: grid;
+}
+
+.small-spacer {
+    height: 20px;
+    background-color: greenyellow;
+}
 footer {
     background-color: #593C8F;
     color: #FFF9FB;
     text-align: center;
     padding-top: 1px;
+}
+
+@media screen and (min-width: 750px) {
+    body {
+        position: relative;
+    }
+
+    .data {
+        position: absolute;
+        top: 160px;
+        left: 20px;
+        width: 325px;
+        background-color: var(--transl-white);
+    }
+
+    .weather {
+        position: absolute;
+        right: 20px;
+        bottom: 115px;
+        width: 325px;
+        background-color: var(--transl-white);
+    }
+
+    h2 {
+        background-color: var(--transl-white); 
+    }
 }
