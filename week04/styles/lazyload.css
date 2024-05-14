@@ -1,0 +1,59 @@
+header {
+    text-align: center;
+    background-color: fuchsia;
+    color: #070707;
+    padding: 1.5rem;
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.75em;
+    text-align: center;
+}
+
+main {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.misc {
+    background-color: #070707;
+    width: 400px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    opacity: 1;
+    transition: opacity 5s;
+}
+
+figcaption {
+    padding-top: .5rem;
+    padding-bottom: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+footer {
+    background-color: fuchsia;
+    color: #070707;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 0;
+}
+
+@keyframes fade {
+    0% {
+       opacity: 0; 
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
+}
