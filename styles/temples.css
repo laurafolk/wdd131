@@ -77,6 +77,14 @@ header h1 {
 	content: "☰";
 }
 
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #FCFCFC;
+}
+
 .show a {
     display: block;
 }
@@ -87,6 +95,7 @@ button {
 
 nav {
     display: flex;
+    flex-direction: column;
     background-color: blueviolet;
     font-family: 'Times New Roman', Times, serif;
     /* color: #FCFCFC; */
@@ -96,13 +105,13 @@ nav {
     width: 100%;
 }
 
-.navigation a {
+/* .navigation a {
     display: none;
     padding: 1rem;
     text-align: center;
     text-decoration: none;
     color: #FCFCFC;
-}
+} */
 
 nav a:hover {
 	text-decoration: underline double;
@@ -154,7 +163,7 @@ footer {
     justify-content: center;
     text-align: center;
     background-color: blueviolet;
-    color: black;
+    color: #FCFCFC;
     padding: 30px;
     font-size: 1.5em;
     width: 100%;
