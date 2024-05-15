@@ -14,22 +14,14 @@ body {
 }
 
 header {
-    /* display: grid;
-    grid-gap: 1rem; */
+    display: grid;
+    grid-gap: 1rem;
     background-color: blueviolet;
     /* box-shadow: var(--box-shadow); */
     color: black;
     /* margin: 20px auto; */
-    padding: 10px;
+    padding: 15px;
 }
-
-/* .container { */
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(32px, 1fr));
-    grid-gap: 20px; */
-    /* margin: 0 10px; */
-    /* margin: auto;
-} */
 
 header .navigation {
     /* display: block; */
@@ -58,15 +50,15 @@ header .hamburger .bar {
     margin: 5px auto;
 } */
 
-/* header h1 {
+header h1 {
     grid-column: 1 / 2;
     font-family: "Times New Roman";
     font-size: 2.5rem;
-    padding-top: 0.7rem;
-} */
+    padding-top: 0.6rem;
+}
 
-/* #menu {
-    display: block;
+#menu {
+    /* display: block; */
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -74,8 +66,8 @@ header .hamburger .bar {
     font-weight: 700;
     text-decoration: none;
     color: black;
-    padding: .6rem .8rem;   
-} */
+    padding: .6rem .75rem;   
+}
 
 #menu.show::before {
     content: 'X';
@@ -85,11 +77,15 @@ header .hamburger .bar {
 	content: "☰";
 }
 
+.show a {
+    display: block;
+}
+
 button {
     appearance: auto;
 }
 
-.navigation {
+nav {
     display: flex;
     background-color: blueviolet;
     font-family: 'Times New Roman', Times, serif;
@@ -101,6 +97,7 @@ button {
 }
 
 .navigation a {
+    display: none;
     padding: 1rem;
     text-align: center;
     text-decoration: none;
