@@ -1,3 +1,13 @@
+const hambutton = document.querySelector('#hambutton');
+
+hambutton.addEventListener('click', () => {
+
+});
+
+function toggleActive(element) {
+
+};
+
 const temples = [
     {
       templeName: "Aba Nigeria",
@@ -55,5 +65,34 @@ const temples = [
       imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
-    // Add more temple objects here...
+    // Add three more temple objects here...
   ];
+
+  createTempleCard();
+
+  function createTempleCard() {
+    temples.forEach(temple => {
+      let card = document.createElement("image-container");
+      let name = document.createElement("h3");
+      let location = document.createElement("figcaption");
+      let dedication = document.createElement("figcaption");
+      let area = document.createElement("figcaption");
+      let img = document.createElement("img");
+
+      name.textContent = temple.templeName;
+      location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+      dedication.innerHTML = `<span class="label">Dedicaed:</span> ${temple.dedicated}`;
+      area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
+      img.setAttribute("src", temple.imageUrl);
+      img.setAttribute("alt", `${temple.templeName} Temple`);
+      img.setAttribute("loading", "lazy");
+
+      card.appendChild(name);
+      card.appendChild(location);
+      card.appendChild(dedication);
+      card.appendChild(area);
+      card.appendChild(img);
+
+      document.querySelector(".res-grid").appendChild(card);
+    });
+  }
