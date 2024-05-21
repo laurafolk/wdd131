@@ -1,12 +1,12 @@
 const hambutton = document.querySelector('#hambutton');
 
-hambutton.addEventListener('click', () => {
+// hambutton.addEventListener('click', () => {
 
-});
+// });
 
-function toggleActive(element) {
+// function toggleActive(element) {
 
-};
+// };
 
 const temples = [
     {
@@ -65,7 +65,30 @@ const temples = [
       imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
-    // Add three more temple objects here...
+    {
+      templeName: "Saint Louis Missouri",
+      location: "Town and Country, Missouri, United States",
+      dedicated: "1997, June. 1",
+      area: 58749,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    },
+    {
+      templeName: "Idaho Falls Idaho",
+      location: "Idaho Falls, Idaho, United States",
+      dedicated: "1945, September, 23",
+      area: 116250,
+      imageUrl:
+      "https://churchofjesuschristtemples.org/idaho-falls-idaho-temple/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    },
+    {
+      templeName: "Bentonville Arkansas",
+      location: "Bentonville, Arkansas, Unitied States",
+      dedicated: "2023, September, 17",
+      area: 28472,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    },
   ];
 
   createTempleCard();
