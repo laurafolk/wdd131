@@ -116,6 +116,6 @@ const temples = [
       card.appendChild(area);
       card.appendChild(img);
 
-      document.querySelector(".res-grid").appendChild(card);
+      document.querySelector(".container-grid").appendChild(card);
     });
   }
