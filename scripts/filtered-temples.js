@@ -71,7 +71,7 @@ const temples = [
       dedicated: "1997, June. 1",
       area: 58749,
       imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/st-louis-missouri/400x250/st-louis-temple-lds-903353-wallpaper.jpg"
     },
     {
       templeName: "Idaho Falls Idaho",
@@ -79,7 +79,7 @@ const temples = [
       dedicated: "1945, September, 23",
       area: 116250,
       imageUrl:
-      "https://churchofjesuschristtemples.org/idaho-falls-idaho-temple/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/idaho-falls-idaho/2019/400x250/1-Idaho-Falls-Temple-2097425.jpg"
     },
     {
       templeName: "Bentonville Arkansas",
@@ -87,7 +87,7 @@ const temples = [
       dedicated: "2023, September, 17",
       area: 28472,
       imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/bentonville-arkansas/400x400/34410870d7d011ed8402eeeeac1ec672bdc0ce45.jpg"
     },
   ];
 
@@ -97,9 +97,9 @@ const temples = [
     temples.forEach(temple => {
       let card = document.createElement("image-container");
       let name = document.createElement("h3");
-      let location = document.createElement("figcaption");
-      let dedication = document.createElement("figcaption");
-      let area = document.createElement("figcaption");
+      let location = document.createElement("p");
+      let dedication = document.createElement("p");
+      let area = document.createElement("p");
       let img = document.createElement("img");
 
       name.textContent = temple.templeName;
