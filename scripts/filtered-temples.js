@@ -1,12 +1,23 @@
-const hambutton = document.querySelector('#hambutton');
+//Selects the HTML elements and assign to constants
+const hambutton = document.querySelector('#menu');
+const navigation = document.querySelector('nav');
 
-// hambutton.addEventListener('click', () => {
+//Below is for selecting the menu buttons
+const homButton = document.querySelector('#home-button');
+const oldButton = document.querySelector('#old-button');
+const newButton = document.querySelector('#new-button');
+const largeButton = document.querySelector('#large-button');
+const smallButton = document.querySelector('#small-button');
+//page heading
+const pageHeading = document.querySelector('#page-heaging');
 
-// });
+//below is the event listner for the hamburger button
+hambutton.addEventListener('click', () => {
+  navigation.classList.toggle('open');
+  hambutton.classList.toggle('open');
+});
 
-// function toggleActive(element) {
-
-// };
+//list of temple objects array copied plus three that I had to do below.
 
 const temples = [
     {
@@ -87,7 +98,7 @@ const temples = [
       dedicated: "2023, September, 17",
       area: 28472,
       imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/bentonville-arkansas/400x400/34410870d7d011ed8402eeeeac1ec672bdc0ce45.jpg"
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/bentonville-arkansas/400x400/34410870d7d011ed8402eeeeac1ec672bdc0ce45.jpeg"
     },
   ];
 
@@ -117,5 +128,106 @@ const temples = [
       card.appendChild(img);
 
       document.querySelector(".container-grid").appendChild(card);
+    });
+  }
+
+  let filteredTemples = [];
+
+  document.addEventListener('DOMContentLoaded', function () {
+    generate_temple_cards("home");
+  }, false);
+
+  function changeActive(activePhrase) {
+    //this is on the nav buttons for the home, old, new, large and small.
+    homeButton.classList.remove('active');
+    oldButton.classList.remove('active');
+    newButton.classList.remove('active');
+    largeButton.classList.remove('active');
+    smallButton.classList.remove('active');
+
+    switch (activePhrase) {
+      case "home":
+        homeButton.classList.add('active');
+        break;
+      case "old":
+        oldButton.classList.add('active');
+        break;
+      case "large":
+        largeButton.classList.add('active');
+        break;
+      case "small":
+        smallButton.classList.add('active');
+        break;
+      default:
+    }
+  }
+
+  // below is to reorder date format
+  function reorderDate(dateString) {
+    const parts = dateString.split(',').map(part => part.trim()); //example ['1965', 'April', '4']
+
+    const day = parts[2];
+    const month = parts[1];
+    const year = parts[0];
+
+    return `${day} ${month} ${year}`;
+  }
+
+  function generate_temple_cards(filterPhrase) {
+    // Below will filter the temple array by Home - displays all temples, Old - displays temples built before 1990,
+    // New - displays temples built after 2000, Large - displays temples larger than 90000 sq ft, Small - displays
+    // temples smaller than 10000 sq ft.
+    switch (filterPhrase) {
+      case "home":
+        filteredTemples = temples;
+        pageHeading.textContent = "Home";
+        break;
+      case "Old":
+        filteredTemples = temples.filter((temple) => parseInt(temple.dedicated.split(",", 1)) < 1900);
+        pageHeading.textContent = "Old | Built Before 1900";
+        break;
+      case "new":
+        filteredTemples = temples.filter((temple) => parseInt(temple.dedicated.split(",", 1)) > 2000);
+        pageHeading.textContent = "New | Buile before 2000";
+        break;
+      case "large":
+        filteredTemples = temples.filter((temple) => temple.area > 90000);
+        pageHeading.textContent = "Large | Bigger than 90000 sq ft";
+        break;
+      case "small":
+        filteredTemples = temples.filter((temple) => temple.area < 10000);
+        pageHeading.textContent = "Small | Smaller than 10000 sq ft";
+        break;
+      default:
+        filteredTemples = temples;
+        pageHeading.textContent = "Home";
+    };
+    changeActive(filterPhrase);
+    const htmlTemples = filteredTemples.map(
+      (temple) =>
+        `<div class="container-grid">
+            <"image-container">
+              <h3>${temple.templeName}</h3>
+              <p>
+                <span class="label">Locatioin:</span>
+                ${temple.location}
+              </p>
+              <p>
+                <span class="label">Dedicated:</span>
+                ${temple.dedicated}
+              </P>
+              <p>
+                <span class="lable">Size:</span>
+                ${temple.size}
+              <img class="temple-img" data-src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy" width=400">
+              </image-container>`
+    );
+    document.getElementById("temples").innerHTML = htmlTemples.join('');
+
+    [].forEach.call(document.querySelectorAll('img[data-src]'), function (img) {
+        img.setAttribute('src', img.getAttribute('data-src'));
+        img.onload = function () {
+          img.removeAttribute('data-src');
+        };
     });
   }
