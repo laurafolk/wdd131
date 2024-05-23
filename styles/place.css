@@ -61,7 +61,8 @@ h2 {
 
 .data, .weather {
     display: grid;
-    /* padding: 20px; */
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .data-item {
@@ -84,9 +85,33 @@ footer {
     background-color: #593C8F;
     color: #FFF9FB;
     text-align: center;
+    font-size: 1.25em;
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+.puppy-before::before {
+    content: "\1F436";
+    display: inline-block;
+    font-size: 2em;
+    margin-right: 5px;
+}
+
+.weather-icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+.weather-icon::after {
+    content: '\1F319';
+    font-size: 2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 
 @media screen and (min-width: 750px) {
     body {
@@ -123,8 +148,8 @@ footer {
 
     .weather {
         position: absolute;
-        right: 20px;
-        bottom: 115px;
+        right: 30px;
+        bottom: 150px;
         width: 365px;
         background-color: white;
         display: grid;
