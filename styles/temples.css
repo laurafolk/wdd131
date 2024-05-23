@@ -158,6 +158,13 @@ figure {
     background-color: #FCFCFC;
 }
 
+.puppy-before::before {
+    content: "\F436";
+    display: inline-block;
+    font-size: 1em;
+    margin-right: 5px;
+}
+
 footer {
     display: grid;
     justify-content: center;
