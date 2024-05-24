@@ -93,7 +93,7 @@ footer {
 .puppy-before::before {
     content: "\1F436";
     display: inline-block;
-    font-size: 2em;
+    font-size: 1em;
     margin-right: 5px;
 }
 
@@ -128,9 +128,9 @@ footer {
         /* padding-right: 40px; */
     }
 
-    h2 {
+    /* h2 {
         background-color: var(--transl-white);
-    }
+    } */
 
     /* .data h2 {
         background-color: whitesmoke;
@@ -149,7 +149,7 @@ footer {
     .weather {
         position: absolute;
         right: 30px;
-        bottom: 150px;
+        bottom: 200px;
         width: 365px;
         background-color: white;
         display: grid;
