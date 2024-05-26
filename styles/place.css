@@ -156,12 +156,12 @@ footer {
         display: grid;
     }
     
-    .weather h2::after {
+    /* .weather h2::after {
         content: '\1F319';
         color: deepskyblue;
         font-size: 2em;
         position: absolute;
         top: 0;
         left: 0;
-    }
+    } */
 }
