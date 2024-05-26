@@ -9,7 +9,7 @@ const newButton = document.querySelector('#new-button');
 const largeButton = document.querySelector('#large-button');
 const smallButton = document.querySelector('#small-button');
 //page heading
-const pageHeading = document.querySelector('#page-heaging');
+const pageHeading = document.querySelector('#page-heading');
 
 //below is the event listner for the hamburger button
 hambutton.addEventListener('click', () => {
@@ -134,7 +134,7 @@ const temples = [
   let filteredTemples = [];
 
   document.addEventListener('DOMContentLoaded', function () {
-    generate_temple_cards("home");
+    generate_container_grid("home");
   }, false);
 
   function changeActive(activePhrase) {
@@ -159,7 +159,7 @@ const temples = [
         smallButton.classList.add('active');
         break;
       default:
-    }
+    };
   }
 
   // below is to reorder date format
@@ -182,7 +182,7 @@ const temples = [
         filteredTemples = temples;
         pageHeading.textContent = "Home";
         break;
-      case "Old":
+      case "old":
         filteredTemples = temples.filter((temple) => parseInt(temple.dedicated.split(",", 1)) < 1900);
         pageHeading.textContent = "Old | Built Before 1900";
         break;
