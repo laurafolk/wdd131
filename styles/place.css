@@ -75,11 +75,11 @@ h2 {
     background-color: greenyellow;
 }
 
-main::after {
+/* main::after {
     content: "";
     display: block;
     background-color: #593C8F;
-}
+} */
 
 footer {
     background-color: #593C8F;
@@ -106,7 +106,7 @@ footer {
 
 .weather-icon::after {
     content: '\1F319';
-    color: deepskyblue;
+    /* color: deepskyblue; */
     font-size: 2em;
     position: absolute;
     top: 0;
