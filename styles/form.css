@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: "Poetsen One", sans-serif;
+  }
+
+  body {
+    max-width: 1000px;
+    min-width: 300px;
+    justify-content: center;
+    font-family: sans-serif;
+  }
+
+  .container {
+    margin: 2em;
+  }
+
+  .container header {
+    background-color: indigo;
+    text-align: center;
+    color: white;
+    border-radius: 6px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .container h1 {
+    font-family: "Poetsen One", sans-serif;
+    padding: 15px;
+  }
+
+  .container main {
+    padding: 10px;
+  }
+
+  form {
+    display: block;
+  }
+
+  .prf label {
+    display: block;
+    padding-top: 1rem;
+    color: #0d0a0a;
+    font-size: .9rem;
+  }
+
+  .prf select:required, .prf input:required {
+    border-left: solid 9px indigo;
+  }
+
+  input[type="radio"] {
+    display: none;
+    position: relative;
+    caret-color: indigo;
+  }
+
+  fieldset {
+    border: none;
+    margin-top: 1rem;
+  }
+
+  fieldset legend {
+    font-size: 15px;
+  }
+
+  .stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+  }
+
+  .stars>label::before {
+    content: "\2606";
+  }
+
+  .stars>label {
+    color: goldenrod;
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    margin-left: 5px;
+    display: flex;
+    padding-bottom: 1rem;
+    align-items: center;
+    caret-color: indigo;
+  }
+
+  .hint {
+    font-style: italic;
+    font-size: 15px;
+  }
+
+  .container footer {
+    background-color: indigo;
+    text-align: center;
+    color: white;
+    border-radius: 6px; 
+    padding-top: 20px;
+    padding-bottom: 20px; 
+  }
+
+  .flower-hibiscus::before {
+    content: "\1F33A"; /* Unicode for 🌺 */
+    display: inline-block;
+    font-size: 1em;
+    margin-right: 5px;
+}
+
+  @media (min-width: 750px) {
+    .container h1 {
+        font-size: 20px;
+    }
+
+  }
