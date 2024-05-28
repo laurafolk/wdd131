@@ -7,11 +7,11 @@
     <title>Product Review Form</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Laura M. Folk - Product Review Form">
     <meta name="author" content="Laura M. Folk">
-    <!-- <link rel="shortcut icon" href="#"> -->
-    <link rel="stylesheet" href="styles/form.css">
+    <!-- <link rel="stylesheet" href="styles/form.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
 </head>
@@ -24,7 +24,7 @@
             <form method="get" action="review.html" class="prf">
                 <label>
                     Product Name *
-                    <select name="productN" id="productN">
+                    <select name="productN" id="productN" required>
                         <option value disabled selected>Select a Product...</option>
                         <option value="fc-1888">flux capacitor</option>
                         <option value="fc-2050">power laces</option>
@@ -86,6 +86,7 @@
                     <span class="hint02">(Optional)</span>
                     <input type="text" id="nameUser" name="nameUser">
                 </label>
+                <input type="submit" value="Add the Review">
             </form>
         </main>
         <footer>

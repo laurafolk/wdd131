@@ -1,118 +1,211 @@
-@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
-
+:root {
+    --box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    --backgound-head-foot: indigo;
+  
+  }
+  
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 15px;
-    font-family: "Poetsen One", sans-serif;
+    font-size: 16px;
+    font-family: 'Poetsen One', sans-serif;
   }
-
+  
   body {
     max-width: 1000px;
-    min-width: 300px;
-    justify-content: center;
-    font-family: sans-serif;
+    margin: 0 auto;
+    background-color: #F5F7Fa;
   }
-
+  
   .container {
-    margin: 2em;
+    margin: 2rem;
   }
-
+  
+  .container main {
+    padding: 10px;
+  }
+  
+  /*Header*/
   .container header {
     background-color: indigo;
     text-align: center;
     color: white;
     border-radius: 6px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    box-shadow: var(--box-shadow);
   }
-
+  
   .container h1 {
-    font-family: "Poetsen One", sans-serif;
+    font-family: "Poetsen", sans-serif;
+    font-size: 30px;
     padding: 15px;
   }
-
-  .container main {
-    padding: 10px;
-  }
-
-  form {
-    display: block;
-  }
-
+  
+  /*form styling*/
   .prf label {
     display: block;
     padding-top: 1rem;
-    color: #0d0a0a;
+    color: #181819;
     font-size: .9rem;
   }
-
-  .prf select:required, .prf input:required {
-    border-left: solid 9px indigo;
+  
+  .prf input[type="text"],
+  .prf select,
+  .prf input[type="date"],
+  .prf textarea {
+    display: block;
+    background-color: #eee;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
   }
-
+  
+  .prf input[type="checkbox"] {
+    margin-right: 6px;
+  }
+  
+  fieldset {
+    border: none;
+    margin-top: 1rem;
+  }
+  
+  fieldset legend {
+    font-size: 14px;
+  }
+  
+  /* stars */
   input[type="radio"] {
     display: none;
     position: relative;
     caret-color: indigo;
   }
-
-  fieldset {
-    border: none;
-    margin-top: 1rem;
-  }
-
-  fieldset legend {
-    font-size: 15px;
-  }
-
+  
   .stars {
     display: flex;
     flex-direction: row-reverse;
     justify-content: left;
+  
   }
-
-  .stars>label::before {
-    content: "\2606";
-  }
-
+  
   .stars>label {
-    color: goldenrod;
+    color: gold;
     width: 30px;
     height: 30px;
     font-size: 2rem;
     margin-left: 5px;
-    display: flex;
     padding-bottom: 1rem;
+    display: flex;
     align-items: center;
-    caret-color: indigo;
+    caret-color: rgba(0, 0, 0, 0);
+    /* remove blinking cursor*/
   }
-
+  
+  .stars>label:hover {
+    color: #000;
+  }
+  
+  .stars>label::before {
+    content: "\2606";
+  }
+  
+  .stars input:checked~label::before {
+    content: "\2605";
+  }
+  
   .hint {
     font-style: italic;
-    font-size: 15px;
+    font-size: 14px;
   }
-
+  
+  .hint02 {
+    color: blue;
+  }
+  
+  .features label {
+    padding-top: 0px;
+  }
+  
+  
+  .prf input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(gold, rgb(198, 169, 2));
+    color: #000;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 2rem 0 2rem 0;
+    box-shadow: 1px 1px 4px #999;
+    appearance: none;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+  }
+  
+  .prf select:required,
+  .prf input:required {
+    border-left: solid indigo;
+  }
+  
+  .prf select:required:valid,
+  .prf input:required:valid {
+    border-left: solid 8px indigo;
+  }
+  
+  /*FOOTER Information*/
   .container footer {
-    background-color: indigo;
+    background-color: var(--backgound-head-foot);
     text-align: center;
     color: white;
-    border-radius: 6px; 
-    padding-top: 20px;
-    padding-bottom: 20px; 
+    border-radius: 6px;
+    box-shadow: var(--box-shadow);
   }
-
-  .flower-hibiscus::before {
-    content: "\1F33A"; /* Unicode for 🌺 */
-    display: inline-block;
-    font-size: 1em;
-    margin-right: 5px;
-}
-
-  @media (min-width: 750px) {
+  
+  footer .foot-cont {
+    padding: 15px;
+  }
+  
+  footer .foot-cont p {
+    font-family: "Poetsen One", sans-serif;
+  }
+  
+  
+  /*page review*/
+  
+  .reviewMessage {
+    min-height: 70vh;
+    padding: 20px;
+  }
+  
+  .reviewMessage h2,
+  .reviewMessage p {
+    text-align: center;
+  }
+  
+  .reviewMessage p {
+    background-color: gold;
+    width: 200px;
+    margin: 0px auto;
+    border-radius: 6px;
+    margin-top: 20px;
+  }
+  
+  .numVisits {
+    color: mediumpurple;
+    font-size: 20px;
+  }
+  
+  /*Large View*/
+  @media (min-width: 39.5em) {
     .container h1 {
-        font-size: 20px;
+      font-size: 20px;
     }
-
+  
+    .reviewMessage p {
+      width: 400px;
+    }
+  
+  
   }
