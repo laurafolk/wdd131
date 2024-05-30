@@ -12,18 +12,17 @@
 <body>
     <div id="content"></div>
         <header>
-            <a id="logo_link" href="contactus.html">
-                <img class="logo" src="images/creative-corner.jpg" alt="Laura's Creative Corner Logo">
+            <a id="logo" href="contactus.html">
+                <img class="logo" src="images/creative-corner.webp" alt="Laura's Creative Corner Logo">
             </a>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="companyblog.html">Company Blog</a>
                 <a href="contactus.html">Contact Us</a>
-                <a href="site-plan.html">Site Plan</a>
             </nav>
     </header>
     <main class="contactus-grid">
-        <img class="card-img" src="images/rsz_snowmen_contactus.jpg" alt="snowmen">
+        <img class="card-img" src="images/snowmen1-contactus.webp" alt="snowmen">
         <div id="feedback"></div>
             <form action="/my-handling-form-page" method="post">
                 <ul>
@@ -46,37 +45,8 @@
             </form>
 </main>
     <footer>
-        <p>Laura's Creative Corner &copy; 2023 - Laura Folk</p>
-        <p><a href="index.html">Home</a></p>
-        <p><a href="companyblog.html">Company Blog</a></p>
-        <p><a href="contactus.html">Contact Us</a></p>
-        <p><a href="site-plan-laurascc.html">Site Plan</a></p>
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.png" alt="fb icon">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.png" alt="twitter icon">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.png" alt="instagram icon">
-            </a>
-    </footer>
-    <script>
-        // get the feedback div element so we can do something with it.
-        const feedbackElement = document.getElementById('feedback');
-        // get the form so we can read what was entered in it.
-        const formElement = document.forms[0];
-        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-        formElement.addEventListener('submit', function(e) {
-            // stop the form from doing the default action.
-            e.preventDefault();
-            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
-            // make the feedback element visible.
-            feedbackElement.style.display = "block";
-            // add a class to move everything down so our message doesn't cover it.
-            document.body.classList.toggle('moveDown');
-        });
-    </script>    
+        <p>&copy; <span id="currentYear">2024</span> | Laura M. Folk | United States</p>
+        <p>Last Modified on: <span id="lastmodified"></span></p>
+    </footer>   
 </body>
 </html>
