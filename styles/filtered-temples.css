@@ -7,8 +7,10 @@
 }
 
 body {
-    max-width: 90%;
-    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 100px auto;
+    /* max-width: 90%;
+    margin: 0 auto; */
     background-color: #FCFCFC;
 }
 
@@ -18,13 +20,17 @@ header {
     padding: 20px;
 }
 
-header .navigation {
+h1 {
+    padding-left: 1.2rem;
+}
+
+/* header .navigation {
     text-align: center;
     min-height: 70px;
     border-bottom: 1px solid blueviolet;
-}
+} */
 
-.navigation {
+/* .navigation {
     display: flex;
     background-color: blueviolet;
     font-family: 'Times New Roman', Times, serif;
@@ -32,6 +38,21 @@ header .navigation {
     font-weight: bold;
     font-size: 1.5rem;
     width: 100%;
+} */
+
+nav {
+    display: flex;
+    background-color: blueviolet;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration-color: #0d0a0a;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.active {
+    font-weight: 700;
 }
 
 main {
@@ -42,6 +63,12 @@ main {
     padding: 20px;
 }
 
+#temples {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
 .container-grid {
     display: flex;
     flex-direction: column;
@@ -49,11 +76,11 @@ main {
     margin: 0 auto;
 }
 
-image-container {
-    border: 2px solid black;
+.image-container {
+    border: 2px solid blueviolet;
     border-radius: 20px;
-    box-shadow: 5px 5px 10px black;
-    padding: 0.5rem;
+    box-shadow: 10px 10px 20px blueviolet;
+    padding: 1rem;
     /* padding: 0.5rem 0.5rem 0 0.5rem; */
 }
 
@@ -66,16 +93,6 @@ img {
 h3 {
     text-align: center;
     font-size: 1.2rem;
-}
-
-.navigation {
-    display: flex;
-    background-color: blueviolet;
-    font-family: 'Times New Roman', Times, serif;
-    text-decoration-color: #0d0a0a;
-    font-weight: bold;
-    font-size: 1.5rem;
-    width: 100%;
 }
 
 #menu.show::before {
@@ -99,12 +116,42 @@ button {
     font-size: 1.5rem;
     width: 100%;
 } */
+/* moved the below above the .navagation
+#menu.show::before {
+    content: 'X';
+}
 
-.navigation a {
+#menu::before {
+	content: "☰";
+} */
+
+/* button {
+    appearance: auto;
+} */
+
+/* .navigation {
+    display: flex;
+    background-color: blueviolet;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration-color: #0d0a0a;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 100%;
+} */
+
+/* .navigation a {
     padding: 1rem;
     text-align: center;
     text-decoration: none;
     color: #FCFCFC;
+} */
+
+nav a {
+    width: 45%;
+    padding: 0.5rem 0 0.5rem 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 1.5rem;
 }
 
 nav a:hover {
@@ -147,31 +194,46 @@ footer {
     }
 
     header {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+        /* justify-content: space-between; */
     }
 
     h1 {
-        display: block;
+        /* display: block; */
         font-size: 2rem;
-        margin-left: 0;
-        text-align: center;
+        /* margin-left: 0;
+        text-align: center; */
     }
 
     #menu {
         display: none;
     }
 
-	.navagation {
+    nav {
+        flex-direction: row;
+        background-color: transparent;
+        max-height: 80px;
+    }
+
+    nav a {
+        display: block;
+        flex: 1 1 100%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 1.5rem;
+    }
+
+	/* .navagation {
 		justify-content: space-around;
 		flex-direction: row;
         align-items: center;
-	}
+	} */
 
-	.navigation a {
+	/* .navigation a {
         display: block;
 		flex: 1 1 100%;
-	}
+	} */
 
     main {
         display: grid;
@@ -185,14 +247,14 @@ footer {
     .container-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        /* grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); */
+
         grid-gap: 30px;
         margin: 0;
     }
 
-    image-container {
+    /* image-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 20px;
-    }
+    } */
 }
