@@ -1,5 +1,5 @@
 //select HTML elements and assign to constants
-const hamButton = document.querySelector('#mobile-menu-button');
+const hamButton = document.querySelector('#button');
 const navigation = document.querySelector('nav');
 const page = document.querySelector('main');
 const heading = document.querySelector('#header-title');
