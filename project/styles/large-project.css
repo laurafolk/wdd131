@@ -1,11 +1,5 @@
 /* Media Queries for Responsive Design */
 @media screen and (max-width: 900px) {
-
-    body {
-        display: grid;
-        grid-template-columns: auto 250px;
-        grid-template-rows: 150px auto 100px;
-    }
     
     header {
         flex-direction: column;
