@@ -7,10 +7,10 @@ const heading = document.querySelector('#header-title');
 
 //create event listener for the hamburger menu button
 //toggle the open class on/off for the nav menu and button, when the button is clicked
-hamButton.addEventListener('click', () => {
-    hamButton.classList.toggle('open');
-    navigation.classList.toggle('open');
-});
+// hamButton.addEventListener('click', () => {
+//     hamButton.classList.toggle('open');
+//     navigation.classList.toggle('open');
+// });
 
 page.addEventListener('click', () => {
     hamButton.classList.remove('open');
@@ -28,19 +28,19 @@ heading.addEventListener('click', () => {
 // });
 
 // projects object array
-const projects = [
+// const projects = [
 
-    {
-        itemName: "",
-        description: "",
-        designer: "Laura M. Folk",
-        imageSrc: "images/.webp",
-        imgWidth: "",
-        imgHeight: "",
-        projectUrl: "#",
-        description: "",
-    }
-]
+//     {
+//         itemName: "",
+//         description: "",
+//         designer: "Laura M. Folk",
+//         imageSrc: "images/.webp",
+//         imgWidth: "",
+//         imgHeight: "",
+//         projectUrl: "#",
+//         description: "",
+//     }
+// ]
 
 // get the feedback div element so we can do something with it.
 const feedbackElement = document.getElementById('feedback');
