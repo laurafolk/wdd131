@@ -4,13 +4,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-size: 20px; */
-    /* font-family: 'Times New Roman', sans-serif; */
 }
 
 body {
-    /* background-color: #ADFC92; */
-    /* background-color: #D4FCC3; */
     background-color: #D6D5B3;
     font-family: 'shantell', 'georgia', 'serif';
     font-size: 22px;
@@ -51,9 +47,16 @@ nav a:hover {
 main section {
     text-align: center;
 }
-main section img {
+/* main section img {
     box-sizing: border-box;
     color: #4F345A;
+} */
+
+.main-img img {
+    border-style: solid;
+    border-color: #4F345A;
+    border-radius: 20px;
+    border-width: 15px;
 }
 
 h2 {
@@ -176,10 +179,10 @@ footer p a:hover {
     box-shadow: 20px 20px 30px #5D4E6D;
     width: 100%;
 }
-.home-grid {
+/* .home-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-}
+} */
 
 /*  css for page 2 company blog */
 .lrscc-company-blog-grid {
@@ -216,11 +219,7 @@ footer p a:hover {
   img {
     max-width: 100%;
   }
-  /* image */
-  /* .rsz_resin_coasters, .rsz_ceramic_coasters2, .rsz_profile_picture {
-    width: 100%;
-    padding: 20px;
-  } */
+
   
   /* Add a card effect for articles */
   .card {
@@ -299,6 +298,30 @@ form {
     border-color: #4F345A;
   }
   
+  .prf input[type="submit"] {
+    border: none;
+    /* background-image: linear-gradient(gold, rgb(198, 169, 2)); */
+    color: #000;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 2rem 0 2rem 0;
+    box-shadow: 1px 1px 4px #999;
+    appearance: none;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+  }
+  
+  .prf select:required,
+  .prf input:required {
+    border-left: solid indigo;
+  }
+  
+  .prf select:required:valid,
+  .prf input:required:valid {
+    border-left: solid 8px indigo;
+  }
   textarea {
     /* Align multiline text fields with their labels */
     vertical-align: top;
