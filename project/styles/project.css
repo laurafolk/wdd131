@@ -115,10 +115,7 @@ h5 {
     font-size: .8em;
     padding-bottom: 15px;
 } */
-/* .icon {
-    width: 80px;
-    padding-top: 10px;
-} */
+
 .logo {
     width: 150px;
     padding-left: 10px;
@@ -179,10 +176,6 @@ footer p a:hover {
     box-shadow: 20px 20px 30px #5D4E6D;
     width: 100%;
 }
-/* .home-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-} */
 
 /*  css for page 2 company blog */
 .lrscc-company-blog-grid {
@@ -191,10 +184,6 @@ footer p a:hover {
     gap: 20px;
     padding: 20px;
 }
-
-/* * {
-    box-sizing: border-box;
-  } */
   
   /* Header/Blog Title */
   .header {
@@ -354,7 +343,7 @@ form {
         display: block;
         padding: 15px;
     }
-    #hero {
+    /* #hero {
         margin-top: 0;
     }
     #hero-msg {
@@ -366,19 +355,12 @@ form {
     .home-title {
         font-size: 25px;
         color: #5D4E6D;
-    }
-    .rsz_deep_pink_coasters-card, .rsz_purple_afghan-card, .rsz_sock_snowmena-card { 
-        margin: 50px auto;
-        width: 60%;
-    }
+    } */
+
     #background {
         display: none;
     }
-    /* .rsz_red_coasters, .msg {
-        width: 80%;
-        display: block;
-        margin: 0 auto;
-    } */
+
     footer {
         margin-top: 25px;
     }
