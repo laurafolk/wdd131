@@ -51,9 +51,9 @@ nav {
     /* width: 100%; */
 }
 
-/* .active {
+.active {
     font-weight: 700;
-} */
+}
 
 main {
     display: flex;
@@ -195,8 +195,8 @@ footer {
 
     header {
         display: grid;
-        grid-template-columns: 1.5fr 2fr;
-        /* justify-content: space-between; */
+        grid-template-columns: 1fr 2fr;
+        justify-content: space-between;
     }
 
     h1 {
