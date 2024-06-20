@@ -1,11 +1,12 @@
-// Get the current year
-var currentYear = new Date().getFullYear();
+    //Gets the current year
+    let currentYear = new Date().getFullYear();
+    
 
-// Set the current year in the HTML
-document.getElementById("currentYear").textContent = currentYear;
+    //Displays the current year in the HTML span element with id "currentYear"
+    document.getElementById("currentYear").textContent = currentYear;
 
-// Get the last modified date of the document
-var lastModified = new Date(document.lastModified);
+    //Gets the last modified date of the document
+    let lastModifiedDate = document.lastModified;
 
-// Set the last modified date in the HTML
-document.getElementById("lastmodified").innerHTML = lastModified
+
+    document.getElementById("lastModified").innerHTML = "Last Modified: " + lastModifiedDate;
